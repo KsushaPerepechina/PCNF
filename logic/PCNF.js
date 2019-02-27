@@ -1,4 +1,19 @@
+/*
+* Author: Kseniya Perepechina
+* Performed within laboratory work #1
+* on the discipline of the logical foundations of intelligent systems
+* Date: 2/2/2019
+*/
+
 var VARIABLES_SET = [];
+
+function processPCNF() {
+    var inputFormula = document.getElementById('formula').value;
+    const answer = checkOnPCNF(inputFormula);
+    document.getElementById('answer').textContent = "Formula " + inputFormula +
+        (answer === true ? " is" : " is not")
+        + " in PCNF.";
+}
 
 function checkOnPCNF(inputFormula) {
     if (containsGroupNegations(inputFormula)){ return false; }
