@@ -11,23 +11,24 @@
     <link rel="stylesheet" href="front/input_form.css">
     <link rel="stylesheet" href="front/style.css">
 
-    <link rel="shortcut icon" href="images/icon.jpg">
-
     <script type="text/javascript" src="logic/PCNF.js"></script>
+    <script type="text/javascript" src="logic/Tautology.js"></script>
+    <script type="text/javascript" src="logic/Utils.js"></script>
 
-    <title>PCNF</title>
+    <title>Граматыка мовы логікі выказванняў</title>
 </head>
 
 <body>
 <div class="system-information">
-    <h1>Laboratory work #1</h1>
+    <h1>Лабараторныя работы №1 i №2</h1>
 </div>
 
 <div class="sidebar-index">
     <div class="input-data-form">
-        <h1>Input formula here to check is it in <i>perfect conjunctive normal form</i>:</h1>
+        <h1>Увядзіце формулу сюды, каб праверыць ці знаходзіцца яна ў <i>дасканалай кон'юнктыўнай нармальнай форме</i> альбо ці з'яўляецца яна тоеслоўем:</h1>
         <input type="text" id="formula" placeholder="Input formula" required>
-        <button onclick="processPCNF()">CHECK</button>
+        <button onclick="processPCNF()">ў ДКНФ?</button>
+        <button onclick="processTautology()">тоеслоўе?</button>
         <h2 class="error-string" id="answer"></h2>
     </div>
 </div>

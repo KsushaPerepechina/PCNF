@@ -1,0 +1,69 @@
+/*
+* Author: Kseniya Perepechina
+* Performed within laboratory work #1
+* on the discipline of the logical foundations of intelligent systems
+* Date: 2/2/2019
+*/
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  padding: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+html {
+  position:relative;
+  min-height:100%;
+}
+
+.footer {
+  position: absolute;
+  background: #3C3C3C;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  color: lightgray;
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.system-information {
+  padding-left: 1%;
+  float: none;
+  width: 95vw;
+  position: relative;
+}
+
+.system-information h2 {
+  font-size: calc(15px + 0.8vw); 
+}
+
+.system-information p {
+  font-size: calc(12px + 0.5vw);
+}
+
+.sidebar-index {
+  width: calc(100px + 50vw);
+  padding: 0;
+  margin: 10px 10px 20px 5px;
+  margin-left: 2vw;
+  position: relative;
+  float: none;
+  left: calc(25vw - 100px);
+}
+
+@media only screen and (orientation: portrait) {
+    .footer {
+    font-size: calc(7px + 0.3vw);
+  }
+  
+  .system-information h2{
+    font-size: 1.1em;
+  }
+}

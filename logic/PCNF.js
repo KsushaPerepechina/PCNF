@@ -10,9 +10,9 @@ var VARIABLES_SET = [];
 function processPCNF() {
     var inputFormula = document.getElementById('formula').value;
     const answer = checkOnPCNF(inputFormula);
-    document.getElementById('answer').textContent = "Formula " + inputFormula +
-        (answer === true ? " is" : " is not")
-        + " in PCNF.";
+    document.getElementById('answer').textContent = "Формула " + inputFormula +
+        (answer === true ? " " : " не ")
+        + "знаходзіцца ў ДКНФ.";
 }
 
 function checkOnPCNF(inputFormula) {
